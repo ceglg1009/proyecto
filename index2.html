@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vino La Rose | Nosotros</title>
+
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+    var menu=1;
+        function cambiar(){
+
+            var style=document.createElement("link");
+            style.rel="stylesheet";
+            style.type="text/css";
+
+            if(menu==1){
+
+                style.href="styles2.css";
+                menu=2;
+            }else{
+
+                style.href="styles.css";
+                menu=1;
+            }
+            document.head.appendChild(style);
+        }
+    </script>
+    <script type="text/javascript">
+    var menu=1;
+        function cambiar2(){
+
+            var style=document.createElement("link");
+            style.rel="stylesheet";
+            style.type="text/css";
+
+            if(menu==1){
+
+                style.href="styles3.css";
+                menu=2;
+            }else{
+
+                style.href="styles.css";
+                menu=1;
+            }
+            document.head.appendChild(style);
+        }
+    </script>
+</head>
+<body>
+
+<div class="row">
+    <header class="header">
+        <h1><img src="images/logovino.png" class="img-responsive" alt="Vino La Rose" witdh="500" height="500"></h1>
+    </header>
+   <nav class="navbar navbar-inverse "  role="navigation" >
+                               
+                 <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+             
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a class="link-3"  href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</a></li>
+                    <li><a class="link-3" href="index2.html">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="index.html" class="dropdown-toggle link-3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+                      <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="link-3" href="index3.html">Vino tinto</a></li>
+                            <li><a class="link-3" href="index3.html">Vino blanco</a></li>
+                            <li><a class="link-3" href="index3.html">Vino rosado</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link-3" href="index4.html"><span class="fa fa-envelope-o"></span> Criticas</a></li>
+                    <button class=" link-3 btn btn-warning navbar-btn" onClick="cambiar()">Cambiar</button>
+                    <button class=" link-3 btn btn-basic navbar-btn" onClick="cambiar2()">Cambiar 2</button>
+                    
+    
+                </ul>
+               <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="link-3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                   <li><a data-toggle="modal" class="link-3" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> login</a></li>
+                </ul>
+                                              
+       
+            </div>
+        </div>
+   </nav>
+    
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                <h4>Ingresar</h4>
+            </div>
+            <div class="modal-body">
+                   <form class="form-inline">
+                   <div class="form-group">
+                       <label class="sr-only" for="email">Email</label><input type="text" class="form-control input-sm" placeholder="Email" id="email" name="email">
+                       </div>
+                        <div class="form-group">  
+                          
+                           <label class="sr-only" for="password">Clave</label>
+                                     <input type="password" class="form-control input-sm" placeholder="Ingrese clave" id="password" name="password"></div>
+                       <div class="checkbox">
+                       <label>
+                       <input type="checkbox"> Recordar
+                       </label>
+                         </div>
+                    
+                      
+                        
+                       <button type="submit" class="btn btn-info btn-xs">Ingresar</button>
+                       <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancelar</button> 
+                    
+                   
+                     
+               
+                    </form>
+            </div>
+<!--
+            <div class="modal-footer">
+                <div style="padding:10px"></div>
+            </div>
+-->
+        </div>
+        </div>
+    </div></div>
+
+	<section class="content who">
+		<h2 class="title w3-animate-right">Quiénes somos</h2>
+		<p class="w3-animate-left" style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis ligula felis, placerat feugiat arcu iaculis vitae. Proin eget velit a risus cursus sollicitudin.<br>
+		Nunc neque tortor, rutrum a ex ac, ornare lacinia ante. Vivamus quis lacus non elit finibus ultricies. <br>Etiam porttitor leo ac turpis porttitor sollicitudin. Phasellus in nulla magna. Etiam et eros hendrerit, malesuada tortor et, tincidunt felis. Fusce sed lacinia felis. Pellentesque lacinia mollis dolor sit amet venenatis. Fusce euismod rhoncus magna, quis tincidunt orci dictum at. Maecenas vitae cursus diam, vitae consectetur elit. <br> Maecenas efficitur auctor faucibus. Nulla id justo libero. Aenean sodales erat in sem posuere eleifend.  </p>
+		</section>
+	<section class="content tratamientos">
+		<h2 class="title w3-animate-right">Actualidad</h2>
+		<p class="w3-animate-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis ligula felis, placerat<br> feugiat arcu iaculis vitae. Proin eget velit a risus cursus sollicitudin.</p>
+
+		<div class="img-thumbnail">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+        <ol class=" carousel-indicators"> 
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> 
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li> 
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner"> 
+            <div class="item active"> 
+                <img src="images/banderas.jpg" alt=""> 
+                <div class="carousel-caption">
+                    <h1 style="color:black">titulo</h1> 
+                    <p style="color:black">Subtitulo</p> 
+                    
+                    
+                    
+                </div> 
+            </div> 
+            <div class="item">
+                <img src="images/europa1.jpg" alt=""> 
+                <div class="carousel-caption">
+                    <h1 style="color:black">TITULO 03</h1> 
+                    <p style="color:black">SUBTITULO 03</p> 
+                </div>
+           </div> 
+           <div class="item">
+                <img src="images/store.jpg" alt=""> 
+                <div class="carousel-caption">
+                    <h1 >TITULO 03</h1> 
+                    <p >SUBTITULO 03</p> 
+                </div>
+           </div> 
+    </div> 
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+    
+  </div>
+</div>
+	</section>
+
+<div class="row ">
+<footer>
+<button class="btn btn-warning" onClick="cambiar()">Cambiar fondo</button>
+<button class="btn btn-basic" onClick="cambiar2()">Cambiar fondo 2</button> <p id="txt_footer" class="w3-animate-left">Si presenta una discapacidad de ver los colores presione los botones para cambiar color de fondo<br> feugiat arcu iaculis vitae. Proin eget velit a risus cursus sollicitudin.</p>
+</footer>
+</div>
+</body>
+</html>

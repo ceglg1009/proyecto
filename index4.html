@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vino La Rose | Promocion</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+  <script type="text/javascript">
+  var menu=1;
+    function cambiar(){
+
+      var style=document.createElement("link");
+      style.rel="stylesheet";
+      style.type="text/css";
+
+      if(menu==1){
+
+        style.href="styles3.css";
+        menu=2;
+      }else{
+
+        style.href="styles.css";
+        menu=1;
+      }
+      document.head.appendChild(style);
+    }
+  </script>
+  <script type="text/javascript">
+    var menu=1;
+        function cambiar2(){
+
+            var style=document.createElement("link");
+            style.rel="stylesheet";
+            style.type="text/css";
+
+            if(menu==1){
+
+                style.href="styles4.css";
+                menu=2;
+            }else{
+
+                style.href="styles.css";
+                menu=1;
+            }
+            document.head.appendChild(style);
+        }
+    </script>
+</head>
+<body>
+<div class="row">
+  <header class="header">
+    <h1><img src="images/logovino.png" class="img-responsive" alt="Vino La Rose" witdh="500" height="500"></h1>
+  </header>
+  <nav class="navbar navbar-inverse "  role="navigation" >
+                               
+                 <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+             
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a class="link-3"  href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</a></li>
+                    <li><a class="link-3" href="index2.php">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Nosotros</a></li>
+                    <li class="dropdown">
+                        <a href="index3.php" class="dropdown-toggle link-3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+                      <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="link-3" href="index3.php">Vino tinto</a></li>
+                            <li><a class="link-3" href="index3.php">Vino blanco</a></li>
+                            <li><a class="link-3" href="index3.php">Vino rosado</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link-3" href="index4.php"><span class="fa fa-envelope-o"></span> Criticas</a></li>
+                    <button class=" link-3 btn btn-warning navbar-btn" onClick="cambiar()">Cambiar</button>
+                    <button class=" link-3 btn btn-basic navbar-btn" onClick="cambiar2()">Cambiar 2</button>
+                    
+    
+                </ul>
+               <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.php" class="link-3"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                   <li><a data-toggle="modal" class="link-3" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> login</a></li>
+                </ul>
+                                              
+       
+            </div>
+        </div>
+   </nav>
+    
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                <h4>Ingresar</h4>
+            </div>
+            <div class="modal-body">
+                   <form class="form-inline">
+                   <div class="form-group">
+                       <label class="sr-only" for="email">Email</label><input type="text" class="form-control input-sm" placeholder="Email" id="email" name="email">
+                       </div>
+                        <div class="form-group">  
+                          
+                           <label class="sr-only" for="password">Clave</label>
+                                     <input type="password" class="form-control input-sm" placeholder="Ingrese clave" id="password" name="password"></div>
+                       <div class="checkbox">
+                       <label>
+                       <input type="checkbox"> Recordar
+                       </label>
+                         </div>
+                    
+                      
+                        
+                       <button type="submit" class="btn btn-info btn-xs">Ingresar</button>
+                       <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancelar</button> 
+                    
+                   
+                     
+               
+                    </form>
+            </div>
+<!--
+            <div class="modal-footer">
+                <div style="padding:10px"></div>
+            </div>
+-->
+        </div>
+        </div>
+    </div>
+</div>
+
+	<div class="container">
+   <div class="row">
+    <div class="col-sm-6 col-md-4">
+    <div class="cajonm1 animated bounceInLeft">
+        <img src="images/abedul.jpg" width="300">
+       <p class="titulo2">Vinos de distintas vairedades</p>
+       <p class="texto">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel erat justo. In lorem augue, varius ut hendrerit a, gravida</p>
+    </div>
+  </div>
+
+    <div class="col-sm-6 col-md-4">
+    <div class="cajonm1 animated bounceInDown">
+        <img src="images/tinto.jpg" width="300">
+       <p class="titulo2"> Promociones especiales se hacen</p>
+       <p class="texto">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel erat justo. In lorem augue, varius ut hendrerit a, gravida</p>
+    </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+     <div class="cajonm1 animated bounceInRight">
+        <img src="images/cata.jpg" width="300">
+       <p class="titulo2"> Conozca nuestra historia y com</p>
+       <p class="texto">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel erat justo. In lorem augue, varius ut hendrerit a, gravida</p>
+    </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+     <div class="cajonm1 animated bounceInRight">
+        <img src="images/abedul.jpg" width="300">
+       <p class="titulo2">Vinos de distintas vairedades</p>
+       <p class="texto">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel erat justo. In lorem augue, varius ut hendrerit a, gravida</p>
+    </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+     <div class="cajonm1 animated bounceInUp">
+        <img src="images/abedul.jpg" width="300">
+       <p class="titulo2">Vinos de distintas vairedades</p>
+       <p class="texto">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel erat justo. In lorem augue, varius ut hendrerit a, gravida</p>
+    </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="cajonm1 animated bounceInLeft">
+        <img src="images/abedul.jpg" width="300">
+       <p class="titulo2">Vinos de distintas vairedades</p>
+       <p class="texto">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel erat justo. In lorem augue, varius ut hendrerit a, gravida</p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="row ">
+<footer>
+<button class="btn btn-warning" onClick="cambiar()">Cambiar fondo</button>
+<button class="btn btn-basic" onClick="cambiar2()">Cambiar fondo 2</button> <p id="txt_footer" class="w3-animate-left">Si presenta una discapacidad de ver los colores presione los botones para cambiar color de fondo<br> feugiat arcu iaculis vitae. Proin eget velit a risus cursus sollicitudin.</p>
+</footer>
+</div>
+
+</body>
+</html>

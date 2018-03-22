@@ -1,0 +1,115 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* { box-sizing:border-box;}
+
+
+/* -------- 1. LAYOUT -------- */
+
+	body { text-align: center; font:300 20px/1.7;}
+
+	.header { display: flex; justify-content:center; align-items:center;}
+
+
+
+
+/* -------- 2. GENERIC ITEMS -------- */
+
+	.header { height: 450px; background: url(images/wood-floors.jpg) no-repeat center top; background-size: cover;}
+	
+
+	.title { margin-bottom: 40px; font: 60px 'Dancing Script', cursive; text-transform: uppercase;}
+
+	p { margin-bottom: 40px;
+	font-family: Arial, Helvetica, sans-serif}
+
+	.btn { display: inline-block; padding: 10px 40px; border:2px solid #fff; color: #fff; text-decoration: none;}
+
+/* -------- 3. PARTS OF WEB -------- */
+
+	.content { padding: 80px 0;}
+
+		.who { background: #34AA0F; color: #fff;}
+			.who p { max-width: 1055px; margin: 0 auto;}
+
+		.tratamientos { background:#92BE11; color: #fff; }
+
+		.tarifas { background: url(images/wine_grapes_barrel.jpg) no-repeat center top; color: #fff; text-align: left;}
+			.contain { max-width: 1055px; margin: 0 auto;}
+			.tarifas p { max-width: 450px;}
+
+		.localizacion { color:#C9C112; padding-bottom: 0;}
+			.localizacion .map img { max-width: 100%; width: 100%;}
+
+.contenedor{
+
+	width:960px;
+	margin:50px auto;	
+}
+.cajonm1{
+	width:300px;
+	display:inline-block;
+	margin-left:10px;
+}
+footer{
+	background:#000000;
+	width:100%;
+	height:200px;	
+}
+
+#txt_footer{
+	color:#ffffff;
+}
+
+
+
+/* -------- 6. ANIMATIONS -------- */
+.link-3 {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.link-3:hover {
+  background-color: #ffffff;
+  color: #6C051B;
+  padding: 24px 10px;
+}
+
+@font-face{
+	font-family: Dancing Script;
+	src:url(DancingScript-Regular.ttf);
+}
